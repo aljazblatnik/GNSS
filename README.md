@@ -26,9 +26,9 @@ for measurement in json_data["ublox6"]["cw"]["-70"]:
 The top-level structure of the `jamming_dataset_august_2024.json` file is represented in JSON as follows:
 ```JSON
 [
- "ublox6": ["cw"/"cw3"/"FM"/"none"],
- "ublox10": ["cw"/"cw3"/"FM"/"none"],
- "GP01": ["cw"/"cw3"/"FM"/"none"]
+ "ublox6": ["cw" / "cw3" / "FM" / "none"],
+ "ublox10": ["cw" / "cw3" / "FM" / "none"],
+ "GP01": ["cw" / "cw3" / "FM" / "none"]
 ]
 ```
 Every jamming type features 6 different power levels, with the exception of the `none` option, which has only one power level: `"-155"`.
@@ -63,7 +63,7 @@ Each measurement is contained within its specific data structure:
             8,
             10,
             18,
-            ...
+            "..."
         ],
         "visible": [
             {
@@ -72,7 +72,7 @@ Each measurement is contained within its specific data structure:
             "az": 311,
             "SNR": 18
             },
-            ...
+            "..."
         ],
         "visibleCnt": 13
         },
@@ -81,7 +81,7 @@ Each measurement is contained within its specific data structure:
         "used": [
             15,
             13,
-            ...
+            "..."
         ],
         "visible": [
             {
@@ -90,7 +90,7 @@ Each measurement is contained within its specific data structure:
             "az": 79,
             "SNR": 38
             },
-            ...
+            "..."
         ],
         "visibleCnt": 7
     },
@@ -98,7 +98,7 @@ Each measurement is contained within its specific data structure:
     "BEIDOU": {},
     "QZSS": {}
 },
-...
+"..."
 ]
 ```
 #### Data visualization examples
