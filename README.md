@@ -26,9 +26,9 @@ for measurement in json_data["ublox6"]["cw"]["-70"]:
 The top-level structure of the `jamming_dataset_august_2024.json` file is represented in JSON as follows:
 ```JSON
 [
- "ublox6": ["cw" / "cw3" / "FM" / "none"],
- "ublox10": ["cw" / "cw3" / "FM" / "none"],
- "GP01": ["cw" / "cw3" / "FM" / "none"]
+ "ublox6": ["cw / cw3 / FM / none"],
+ "ublox10": ["cw / cw3 / FM / none"],
+ "GP01": ["cw / cw3 / FM / none"]
 ]
 ```
 Every jamming type features 6 different power levels, with the exception of the `none` option, which has only one power level: `"-155"`.
