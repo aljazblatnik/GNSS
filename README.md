@@ -103,7 +103,7 @@ Each measurement is contained within an array structure as follows:
 ```
 #### Data visualization examples
 
-This publicly available dataset is versatile, enabling applications from in-depth response analysis to machine learning and anomaly detection. A straightforward way to illustrate its use is through time series visualizations. You can find three example Python scripts for data visualization in the `examples/data_visualization directory`:
+This publicly available dataset offers a wide range of applications, including detailed response analysis, machine learning implementation, and anomaly detection. A straightforward way to illustrate its use is through time series visualizations. You can find three example Python scripts for data visualization in the `examples/data_visualization directory`:
 
 [Plotting position deviation from the reference point](examples/data_visualization/plot_location_deviation_from_center.py)\
 [Plotting position deviation over time](examples/data_visualization/plot_location_time_deviation.py)\
