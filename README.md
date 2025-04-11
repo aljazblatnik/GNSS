@@ -5,13 +5,13 @@ A global repository for research materials concerning GNSS receiver vulnerabilit
 ### GNSS Jamming Response Dataset 2025
 [---> Dataset download (5.5 GB) <---](https://lso.fe.uni-lj.si/video/arhiv/GNSS/jamming_dataset_august_2024.json)
 
-This dataset is a key component of the research presented in the article **"Evaluating GNSS Receiver Resilience: A Study on Simulation Environment Repeatability"** [link to published article]. It includes measurements capturing the response of three GNSS receivers – `Ai-Thinker GP-01`, `U-blox NEO-6M` (6-Series), and `U-blox MAX-M10` (10-Series) – under three different jamming conditions, each with varying jamming strengths. The article provides an in-depth explanation of the measurement setup, methodology employed, and a detailed analysis of the results contained within this dataset.
-#### Data Access Example Code
+This dataset is a key component of the research presented in the article **"Evaluating GNSS Receiver Resilience: A Study on Simulation Environment Repeatability"** [link to published article]. It includes measurements capturing the response of three GNSS receivers – Ai-Thinker `GP-01`, U-blox `NEO-6M` (6-Series), and U-blox `MAX-M10` (10-Series) – under three different jamming conditions, each with varying jamming strengths. The article provides an in-depth explanation of the measurement setup, methodology employed, and a detailed analysis of the results contained within this dataset.
+#### Dataset access example code
 Here's an example of accessing the `json_data` dictionary in Python:
 ```python
 json_data = json.load('jamming_dataset_august_2024.json')
 
-for measurement in json_data["ublox6"]["cw"]["-70"]:
+for measurement in json_data['ublox6']['cw']['-70']:
     # Prepare before iterating through available data points (seconds).
     for sample in measurement:
         latitude = float(sample['Lat']) # Must be converted to float
@@ -31,7 +31,7 @@ The top-level structure of the `jamming_dataset_august_2024.json` file is repres
  "GP01": ["cw / cw3 / FM / none"]
 ]
 ```
-Every jamming type features 6 different power levels, with the exception of the `none` option, which has only one power level: `"-155"`.
+Every jamming type features 6 different power levels, with the exception of the `none` option, which has only one power level at `"-155"`.
 ```JSON
 [
  "-70": [0-49],
@@ -42,7 +42,7 @@ Every jamming type features 6 different power levels, with the exception of the 
  "-45": [0-49]
 ]
 ```
-Each measurement is contained within its specific data structure:
+Each measurement is contained within an array structure as follows:
 ```JSON
 [
 {
@@ -102,3 +102,9 @@ Each measurement is contained within its specific data structure:
 ]
 ```
 #### Data visualization examples
+
+This publicly available dataset is versatile, enabling applications from in-depth response analysis to machine learning and anomaly detection. A straightforward way to illustrate its use is through time series visualizations. You can find three example Python scripts for data visualization in the `examples/data_visualization directory`:
+
+[Plotting position deviation from the reference point](examples/data_visualization/plot_location_deviation_from_center.py)\
+[Plotting position deviation over time](examples/data_visualization/plot_location_time_deviation.py)\
+[Position deviation over time plot (median & std dev)](examples/data_visualization/plot_location_time_median_and_stdev.py)
