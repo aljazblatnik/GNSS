@@ -132,4 +132,4 @@ Under the following terms:
 
 When citing this database or any of its code examples, please reference the following publication:
 
-`https://www.mdpi.com/3289316`
+[https://www.mdpi.com/3289316](https://www.mdpi.com/3289316)
