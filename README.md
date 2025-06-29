@@ -2,10 +2,15 @@
 A global repository for research materials concerning GNSS receiver vulnerability to jamming and spoofing.
 
 ## Publicly available datasets
-### GNSS Jamming Response Dataset 2025
+### (Scientific data) Voyage to Antarctica 2025
+[---> Dataset download (111.7 GB) <--->](https://lso.fe.uni-lj.si/video/arhiv/GNSS/antarctica2025/processed/)
+
+This dataset is a key component of the research presented in the article **"Voyage to the Frozen Continent: A Comprehensive GNSS Dataset from a Ship’s Expedition to Antarctica"** [Link not yet avaliable]. Additional information will be made public after the article is accepted for publication.
+
+### (MDPI) GNSS Jamming Response Dataset 2025
 [---> Dataset download (5.5 GB) <---](https://lso.fe.uni-lj.si/video/arhiv/GNSS/jamming_dataset_august_2024.json)
 
-This dataset is a key component of the research presented in the article **"Evaluating GNSS Receiver Resilience: A Study on Simulation Environment Repeatability"** [link to published article]. It includes measurements capturing the response of three GNSS receivers – Ai-Thinker `GP-01`, U-blox `NEO-6M` (6-Series), and U-blox `MAX-M10` (10-Series) – under three different jamming conditions, each with varying jamming strengths. The article provides an in-depth explanation of the measurement setup, methodology employed, and a detailed analysis of the results contained within this dataset.
+This dataset is a key component of the research presented in the article **"Evaluating GNSS Receiver Resilience: A Study on Simulation Environment Repeatability"** [https://www.mdpi.com/3289316](https://www.mdpi.com/3289316). It includes measurements capturing the response of three GNSS receivers – Ai-Thinker `GP-01`, U-blox `NEO-6M` (6-Series), and U-blox `MAX-M10` (10-Series) – under three different jamming conditions, each with varying jamming strengths. The article provides an in-depth explanation of the measurement setup, methodology employed, and a detailed analysis of the results contained within this dataset.
 #### Dataset access example code
 Here's an example of accessing the `json_data` dictionary in Python:
 ```python
@@ -108,3 +113,23 @@ This publicly available dataset offers a wide range of applications, including d
 [Plotting position deviation from the reference point](examples/data_visualization/plot_location_deviation_from_center.py)\
 [Plotting position deviation over time](examples/data_visualization/plot_location_time_deviation.py)\
 [Position deviation over time plot (median & std dev)](examples/data_visualization/plot_location_time_median_and_stdev.py)
+
+#### Copyright and Terms of Use
+
+This dataset is publicly available under the **Creative Commons Attribution-NonCommercial (CC BY-NC) 4.0 International license**.
+
+This means you're free to:
+
+* **Share** — copy and redistribute the material in any medium or format.
+* **Adapt** — remix, transform, and build upon the material.
+
+Under the following terms:
+
+* **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+* **NonCommercial** — You may not use the material for commercial purposes.
+
+---
+
+When citing this database or any of its code examples, please reference the following publication:
+
+`https://www.mdpi.com/3289316`
