@@ -19,4 +19,5 @@ dependencies = [
     "cartopy==0.25.0",
     "pyarrow==21.0.0",
     "seaborn==0.13.2",
+    "folium==0.20.0"
 ]

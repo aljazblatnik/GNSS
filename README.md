@@ -8,7 +8,7 @@ A global repository for research materials concerning GNSS receiver vulnerabilit
 This dataset is a key component of the research presented in the article **"Voyage to the Frozen Continent: A Comprehensive GNSS Dataset from a Ship’s Expedition to Antarctica"** [Link not yet avaliable]. Additional information will be made public after the article is accepted for publication.
 
 #### Dataset access example code
-Data from the published dataset can be read using various programs and approaches, with the U-blox U-center 1.x.x software being the most common. For processing the data with Python, this repository includes the example scripts used to generate the graphs in the published article. To achieve the fastest data processing, these scripts perform reading operations directly on the binary file without relying on external libraries. The provided code examples in `examples/data_visualization_nature directory`include:
+Data from the published dataset can be read using various programs and approaches, with the U-blox U-center 1.x.x software being the most common. For processing the data with Python, this repository includes the example scripts used to generate the graphs in the published article. To achieve the fastest data processing, these scripts perform reading operations directly on the binary file without relying on external libraries. The provided code examples in `examples/data_visualization_nature directory` include:
 
 [Statistical processing of received sentences](examples/data_visualization_nature/analyze_GNSS_count.py)\
 [Detailed statistical processing of GNSS parameters](examples/data_visualization_nature/analyze_GNSS_full_stats.py)\
