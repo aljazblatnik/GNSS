@@ -3,7 +3,7 @@ A global repository for research materials concerning GNSS receiver vulnerabilit
 
 ## Publicly available datasets
 ### (Scientific data) Voyage to Antarctica 2025
-[---> Dataset download (111.7 GB) <--->](https://lso.fe.uni-lj.si/video/arhiv/GNSS/antarctica2025/processed/)
+[---> Dataset download (111.7 GB) <--->](https://zenodo.org/records/15783534)
 
 This dataset is a key component of the research presented in the article **"Voyage to the Frozen Continent: A Comprehensive GNSS Dataset from a Ship’s Expedition to Antarctica"** [Link not yet avaliable]. Additional information will be made public after the article is accepted for publication.
 
