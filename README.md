@@ -7,6 +7,15 @@ A global repository for research materials concerning GNSS receiver vulnerabilit
 
 This dataset is a key component of the research presented in the article **"Voyage to the Frozen Continent: A Comprehensive GNSS Dataset from a Ship’s Expedition to Antarctica"** [Link not yet avaliable]. Additional information will be made public after the article is accepted for publication.
 
+#### Dataset access example code
+Data from the published dataset can be read using various programs and approaches, with the U-blox U-center 1.x.x software being the most common. For processing the data with Python, this repository includes the example scripts used to generate the graphs in the published article. To achieve the fastest data processing, these scripts perform reading operations directly on the binary file without relying on external libraries. The provided code examples in `examples/data_visualization_nature directory`include:
+
+[Statistical processing of received sentences](examples/data_visualization_nature/analyze_GNSS_count.py)\
+[Detailed statistical processing of GNSS parameters](examples/data_visualization_nature/analyze_GNSS_full_stats.py)\
+[Visualization of the research vessel's navigation path](examples/data_visualization_nature/plotting_GNSS_path.py)\
+[Plotting the spectrogram](examples/data_visualization_nature/analyze_GNSS_plot_waterfall.py)\
+[Graphical visualization of jamming parameters](examples/data_visualization_nature/analyze_GNSS_logger_data.py)
+
 ### (MDPI) GNSS Jamming Response Dataset 2025
 [---> Dataset download (5.5 GB) <---](https://lso.fe.uni-lj.si/video/arhiv/GNSS/jamming_dataset_august_2024.json)
 
@@ -108,11 +117,11 @@ Each measurement is contained within an array structure as follows:
 ```
 #### Data visualization examples
 
-This publicly available dataset offers a wide range of applications, including detailed response analysis, machine learning implementation, and anomaly detection. A straightforward way to illustrate its use is through time series visualizations. You can find three example Python scripts for data visualization in the `examples/data_visualization directory`:
+This publicly available dataset offers a wide range of applications, including detailed response analysis, machine learning implementation, and anomaly detection. A straightforward way to illustrate its use is through time series visualizations. You can find three example Python scripts for data visualization in the `examples/data_visualization_mdpi directory`:
 
-[Plotting position deviation from the reference point](examples/data_visualization/plot_location_deviation_from_center.py)\
-[Plotting position deviation over time](examples/data_visualization/plot_location_time_deviation.py)\
-[Position deviation over time plot (median & std dev)](examples/data_visualization/plot_location_time_median_and_stdev.py)
+[Plotting position deviation from the reference point](examples/data_visualization_mdpi/plot_location_deviation_from_center.py)\
+[Plotting position deviation over time](examples/data_visualization_mdpi/plot_location_time_deviation.py)\
+[Position deviation over time plot (median & std dev)](examples/data_visualization_mdpi/plot_location_time_median_and_stdev.py)
 
 #### Copyright and Terms of Use
 

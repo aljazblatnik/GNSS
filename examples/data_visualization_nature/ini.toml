@@ -1,0 +1,22 @@
+# ini.toml
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "GNSS_data_visualization_nature"
+version = "1.1.0"
+
+# --- Python Version Requirement ---
+requires-python = "~3.13.0"
+
+# --- Dependencies ---
+dependencies = [
+    "numpy==2.3.3",
+    "matplotlib==3.10.6",
+    "pandas==2.3.3",
+    "cartopy==0.25.0",
+    "pyarrow==21.0.0",
+    "seaborn==0.13.2",
+]
