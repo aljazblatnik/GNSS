@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this dataset or code, please cite the accompanying paper."
+authors:
+  - family-names: "Bertalanič"
+    given-names: "Blaž"
+    affiliation: "Jožef Stefan Institute"
+  - family-names: "Dimc"
+    given-names: "Franc"
+    affiliation: "University of Ljubljana"
+  - family-names: "Bažec"
+    given-names: "Matej"
+    affiliation: "University of Ljubljana"
+  - family-names: "Blatnik"
+    given-names: "Aljaž"
+    affiliation: "University of Ljubljana"
+title: "Voyage to the Frozen Continent: A Comprehensive GNSS Dataset from a Ship’s Expedition to Antarctica"
+version: 1.0.0
+url: "https://github.com/aljazblatnik/GNSS"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Bertalanič"
+      given-names: "Blaž"
+    - family-names: "Dimc"
+      given-names: "Franc"
+    - family-names: "Bažec"
+      given-names: "Matej"
+    - family-names: "Blatnik"
+      given-names: "Aljaž"
+  title: "Voyage to the Frozen Continent: A Comprehensive GNSS Dataset from a Ship’s Expedition to Antarctica"
+  doi: "10.1038/s41597-025-06366-x"
+  journal: "Scientific Data"
+  year: 2026
+  volume: 13
+  start: 49
