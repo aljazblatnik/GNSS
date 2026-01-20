@@ -57,6 +57,7 @@ If you utilize this dataset or code in your research, please cite the following 
 }
 ```
 
+---
 ### (MDPI) GNSS Jamming Response Dataset 2025
 [---> Dataset download (5.5 GB) <---](https://lso.fe.uni-lj.si/video/arhiv/GNSS/jamming_dataset_august_2024.json)
 
