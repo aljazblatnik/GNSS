@@ -45,7 +45,7 @@ While the data is compatible with **u-blox u-center 1.x.x**, our provided Python
 ## 📚 Citation
 If you utilize this dataset or code in your research, please cite the following paper:
 
-**Bertalanič, B., Dimc, F., Bažec, M., & Blatnik, A.** (2025). *Voyage to the Frozen Continent: A Comprehensive GNSS Dataset from a Ship’s Expedition to Antarctica*. Scientific Data. DOI: [10.5281/zenodo.15783534](https://zenodo.org/records/15783534).
+**Bertalanič, B., Dimc, F., Bažec, M., & Blatnik, A.** (2025). *Voyage to the Frozen Continent: A Comprehensive GNSS Dataset from a Ship’s Expedition to Antarctica*. Scientific Data. DOI: [10.1038/s41597-025-06366-x](https://doi.org/10.1038/s41597-025-06366-x).
 
 ```bibtex
 @article{Bertalanic2025,
@@ -53,7 +53,7 @@ If you utilize this dataset or code in your research, please cite the following 
   author = {Bertalanič, Blaž and Dimc, Franc and Bažec, Matej and Blatnik, Aljaž},
   journal = {Scientific Data},
   year = {2025},
-  url = {[https://doi.org/10.5281/zenodo.15783534](https://doi.org/10.5281/zenodo.15783534)}
+  url = {[https://doi.org/10.1038/s41597-025-06366-x](https://doi.org/10.1038/s41597-025-06366-x)}
 }
 ```
 
