@@ -1,20 +1,61 @@
-# GNSS tools and databases
-A global repository for research materials concerning GNSS receiver vulnerability to jamming and spoofing.
+# Voyage to the Frozen Continent: Maritime GNSS & Jamming Dataset
 
-## Publicly available datasets
-### (Scientific data) Voyage to Antarctica 2025
-[---> Dataset download (111.7 GB) <--->](https://zenodo.org/records/15783534)
+**A global repository for research materials concerning GNSS receiver vulnerability to jamming, spoofing, and harsh maritime environments.**
 
-This dataset is a key component of the research presented in the article **"Voyage to the Frozen Continent: A Comprehensive GNSS Dataset from a Ship’s Expedition to Antarctica"** [Link not yet avaliable]. Additional information will be made public after the article is accepted for publication.
+## 🚢 Dataset Overview: Why Use This Data?
+This repository hosts the code and documentation for the dataset associated with the article **"Voyage to the Frozen Continent: A Comprehensive GNSS Dataset from a Ship’s Expedition to Antarctica"** published in *Scientific Data*.
 
-#### Dataset access example code
-Data from the published dataset can be read using various programs and approaches, with the U-blox U-center 1.x.x software being the most common. For processing the data with Python, this repository includes the example scripts used to generate the graphs in the published article. To achieve the fastest data processing, these scripts perform reading operations directly on the binary file without relying on external libraries. The provided code examples in `examples/data_visualization_nature directory` include:
+This is not a static station dataset; it captures the dynamic reality of the **Laura Bassi icebreaker** over a **200-day expedition** (Oct 7, 2024 – April 24, 2025). It bridges the gap in maritime data availability by providing continuous recording from the Mediterranean, through the Panama Canal, to the polar conditions of the Ross Sea.
 
-[Statistical processing of received sentences](examples/data_visualization_nature/analyze_GNSS_count.py)\
-[Detailed statistical processing of GNSS parameters](examples/data_visualization_nature/analyze_GNSS_full_stats.py)\
-[Visualization of the research vessel's navigation path](examples/data_visualization_nature/plotting_GNSS_path.py)\
-[Plotting the spectrogram](examples/data_visualization_nature/analyze_GNSS_plot_waterfall.py)\
-[Graphical visualization of jamming parameters](examples/data_visualization_nature/analyze_GNSS_logger_data.py)
+### ⚡ Key Features for AI & Research Analysis
+* **Real-World Jamming Labels:** The dataset contains **81 days** with confirmed jamming events, totaling **154,874 recorded interference instances**. This makes it an ideal training ground for Machine Learning (ML) classifiers distinguishing between intentional jamming and unintentional interference.
+* **Spectrum "Waterfalls":** Unlike standard logs, this dataset includes `UBX-MON-SPAN` messages (1 Hz), allowing you to visualize the RF spectrum and characterize interference shapes (broadband vs. narrowband) alongside position errors.
+* **Raw Observations:** Includes `UBX-RXM-MEASX` (pseudorange, carrier phase, Doppler) for testing resilient PNT algorithms and RTK performance in low-SNR polar environments.
+* **Harsh Environments:** Captures signal behavior during high-latitude ionospheric disturbances, severe weather, and dynamic vessel motion (roll/pitch) in the Antarctic Circle.
+
+---
+
+## 📥 Access the Data
+**[Download via Zenodo (111.7 GB)](https://zenodo.org/records/15783534)**
+
+* **Format:** Daily binary `.ubx` files (approx. 600 MB each).
+* **Coverage:** 200 continuous days (2024-10-07 to 2025-04-24).
+* **Constellations:** GPS, Galileo, BeiDou (L1 Frequency).
+
+---
+
+## 🛠️ Code & Usage
+We provide Python scripts to help you immediately parse the binary structure without needing external libraries. These scripts were used to generate the figures in the published paper and are optimized for speed by reading directly from the binary stream.
+
+You can find these tools in the `examples/data_visualization_nature` directory:
+
+| Script | Function |
+| :--- | :--- |
+| **[`analyze_GNSS_count.py`](examples/data_visualization_nature/analyze_GNSS_count.py)** | Performs statistical processing of received sentence counts. |
+| **[`analyze_GNSS_full_stats.py`](examples/data_visualization_nature/analyze_GNSS_full_stats.py)** | Extracts detailed statistics of GNSS parameters (C/N0, satellite visibility). |
+| **[`plotting_GNSS_path.py`](examples/data_visualization_nature/plotting_GNSS_path.py)** | Reconstructs and visualizes the research vessel's complete navigation trajectory. |
+| **[`analyze_GNSS_plot_waterfall.py`](examples/data_visualization_nature/analyze_GNSS_plot_waterfall.py)** | Plots RF spectrum waterfalls (`UBX-MON-SPAN`) to visualize jamming and noise. |
+| **[`analyze_GNSS_logger_data.py`](examples/data_visualization_nature/analyze_GNSS_logger_data.py)** | Graphically visualizes specific jamming parameters and receiver state metrics. |
+
+### Quick Start Note
+While the data is compatible with **u-blox u-center 1.x.x**, our provided Python scripts offer a more flexible way to batch-process the 200 days of recordings for scientific analysis.
+
+---
+
+## 📚 Citation
+If you utilize this dataset or code in your research, please cite the following paper:
+
+**Bertalanič, B., Dimc, F., Bažec, M., & Blatnik, A.** (2025). *Voyage to the Frozen Continent: A Comprehensive GNSS Dataset from a Ship’s Expedition to Antarctica*. Scientific Data. DOI: [10.5281/zenodo.15783534](https://zenodo.org/records/15783534).
+
+```bibtex
+@article{Bertalanic2025,
+  title = {Voyage to the Frozen Continent: A Comprehensive GNSS Dataset from a Ship’s Expedition to Antarctica},
+  author = {Bertalanič, Blaž and Dimc, Franc and Bažec, Matej and Blatnik, Aljaž},
+  journal = {Scientific Data},
+  year = {2025},
+  url = {[https://doi.org/10.5281/zenodo.15783534](https://doi.org/10.5281/zenodo.15783534)}
+}
+```
 
 ### (MDPI) GNSS Jamming Response Dataset 2025
 [---> Dataset download (5.5 GB) <---](https://lso.fe.uni-lj.si/video/arhiv/GNSS/jamming_dataset_august_2024.json)
@@ -142,3 +183,9 @@ Under the following terms:
 When citing this database or any of its code examples, please reference the following publication:
 
 [https://www.mdpi.com/3289316](https://www.mdpi.com/3289316)
+
+### Source Verification
+* **Vessel & Timeline:** The dataset covers 200 days from Oct 7, 2024, to April 24, 2025, aboard the Laura Bassi[cite: 2, 26, 31].
+* **Jamming Statistics:** The specific mention of "81 days" and "154,874 recorded interference instances" is derived directly from the validation section of the paper[cite: 163, 164].
+* **Spectrum Data:** The inclusion of `UBX-MON-SPAN` for spectrum visualization is confirmed in the data record[cite: 33, 96, 119].
+* **Code Availability:** The Python scripts listed correspond to the files provided in the code availability section and the Zenodo repository[cite: 90, 186].
